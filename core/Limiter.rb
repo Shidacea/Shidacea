@@ -76,7 +76,7 @@ module SDC
 			# This prevents the framerate boosting beyond the schedule
 
 			if scheduled_frame then
-				while (Time.now - @timer) < (@temp_counter + 1) / @max do
+				while (Time.now - @timer) < (@temp_counter + 1) / @max.to_f do
 				end
 				@temp_counter = 0
 				@timer = Time.now
