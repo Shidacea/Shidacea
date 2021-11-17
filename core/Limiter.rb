@@ -55,6 +55,8 @@ module SDC
 				@update_block&.call
 			end
 
+			return false if !SDC.scene
+
 			if is_draw_frame then
 				@draw_block&.call
 			end

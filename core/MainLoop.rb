@@ -26,7 +26,6 @@ module SDC
 				if !SDC.next_scene then	# Terminate program
 					SDC.scene.at_exit
 					SDC.scene = nil
-					return false
 				elsif SDC.next_scene != true then	# Change scene
 					SDC.scene.at_exit
 					SDC.scene = SDC.next_scene.new
